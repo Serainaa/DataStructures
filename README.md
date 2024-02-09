@@ -9,9 +9,10 @@ In the above code, we define a Stack class that utilizes an array to store eleme
 
 The above code defines a Stack class utilizing a linked list to manage elements. It has methods like peek() to view the top element, push() to add elements to the stack, and pop() to remove elements from the stack. An instance myStack is created, and various stack operations are performed for testing purposes.
 
-### Exercise 1 - [Valid Paremthesis](Stack-ValidParanthesis.py)
+### Exercise 1 - [Valid Parenthesis](Stack-ValidParanthesis.py)
 
-Leetcode exercise 20
+Leetcode exercise 20:
+
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 An input string is valid if:
 * Open brackets must be closed by the same type of brackets.
@@ -19,6 +20,15 @@ An input string is valid if:
 * Every close bracket has a corresponding open bracket of the same type.
 
 This Python solution uses a dictionary to map opening brackets to their corresponding closing brackets and simulates a stack using a list. It iterates through each character in the input string, pushing closing brackets onto the stack when opening brackets are encountered. When a closing bracket is encountered, it checks if it matches the last element in the stack. If the stack becomes empty after iterating through all characters, it indicates that all opening brackets have been closed properly, and the function returns True. Otherwise, it returns False.
+
+### Exercise 2 - [Longest Valid Parentheses](Stack-LongestValidParenthesis.py)
+
+Leetcode exercise 32:
+
+Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses 
+substring.
+
+This solution utilizes a stack to keep track of indices of opening parentheses. It iterates through the string and updates the maximum valid substring length whenever a valid substring is found. Finally, it returns the length of the longest valid substring found in the input string.
 
 ## Queues
 ### [Queue-Linked Lists](Queue-LinkList.js)
