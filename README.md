@@ -9,6 +9,17 @@ In the above code, we define a Stack class that utilizes an array to store eleme
 
 The above code defines a Stack class utilizing a linked list to manage elements. It has methods like peek() to view the top element, push() to add elements to the stack, and pop() to remove elements from the stack. An instance myStack is created, and various stack operations are performed for testing purposes.
 
+### Exercise 1 - [Valid Paremthesis](Stack-ValidParanthesis.py)
+
+Leetcode exercise 20
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+An input string is valid if:
+* Open brackets must be closed by the same type of brackets.
+* Open brackets must be closed in the correct order.
+* Every close bracket has a corresponding open bracket of the same type.
+
+This Python solution uses a dictionary to map opening brackets to their corresponding closing brackets and simulates a stack using a list. It iterates through each character in the input string, pushing closing brackets onto the stack when opening brackets are encountered. When a closing bracket is encountered, it checks if it matches the last element in the stack. If the stack becomes empty after iterating through all characters, it indicates that all opening brackets have been closed properly, and the function returns True. Otherwise, it returns False.
+
 ## Queues
 ### [Queue-Linked Lists](Queue-LinkList.js)
 
